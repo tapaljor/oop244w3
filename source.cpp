@@ -1,22 +1,24 @@
 #include <iostream>
-#include "account.h"
+#include "account.cpp"
 
 using std::cout;
 using std::cin;
 using std::endl;
 
-/*constructor */
-Account::Account(int a, double b) {
-    accountNumber = a;
-    balance = b;
-}
+int main() {
 
-/*functiond defitions starts with class name then ::*/
-void Account::setter(int a, double b) {
-    accountNumber = a;
-    balance = b;
-}
-void Account::getter() const {
-    cout << "Account: " << accountNumber << endl;
-    cout << "Balance: " << balance << endl;
+    Account a1(0, 0.0);
+
+    int a{0};
+    double balance{0};
+
+    cout << "Enter account: ";
+    cin >> a;
+    cout << "Enter balance: ";
+    cin >> b;
+
+    a1.setter(a, b);
+    a1.getter();
+    
+    return 0;
 }
