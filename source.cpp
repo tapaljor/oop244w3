@@ -10,7 +10,7 @@ int main() {
     Account a1(0, 0.0);
 
     int a{0};
-    double balance{0};
+    double b{0};
 
     cout << "Enter account: ";
     cin >> a;
